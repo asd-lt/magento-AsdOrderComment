@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Asd_OrderComment>
+            <version>0.1.0</version>
+        </Asd_OrderComment>
+    </modules>
+    <global>
+        <helpers>
+            <ordercomment>
+                <class>Asd_OrderComment_Helper</class>
+            </ordercomment>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <checkout_type_onepage_save_order>
+                <observers>
+                    <ordercomment_set_ordercomment>
+                        <type>model</type>
+                        <class>Asd_OrderComment_Helper_OrderComment</class>
+                        <method>setOrderComment</method>
+                    </ordercomment_set_ordercomment>
+                </observers>
+            </checkout_type_onepage_save_order>
+        </events>
+    </frontend>
+</config>

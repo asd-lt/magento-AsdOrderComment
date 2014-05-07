@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Asd_OrderComment>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Asd_OrderComment>
+    </modules>
+</config>
